@@ -1,0 +1,458 @@
+body{margin: 0;font-family: Ariel,sans-serif,sans-serif}
+
+a{color:black;}
+/*.middle{background-image: url("images/porcha.jpg");height: 830px;width: 1903px;background-repeat: no-repeat;background-position: center;margin: auto;}*/
+.middle {
+    background-image: url("images/porcha.jpg");
+    height: 100vh; /* Make it fill the viewport height */
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Ensure the image covers the entire element */
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .middle {
+        height: 100vh; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .middle {
+        height: 100vh; /* Adjust height for very small screens */
+    }
+}
+
+.middle .navbar{display: flex;justify-content: flex-end;gap:80px;color:black;font-size: 25px;font-family: Arial,sans-serif,sans-serif;padding: -10px;font-weight: bold;margin: 0;}
+.middle .navbar button{border:none;cursor: pointer;background-color: transparent;font-size: 25px;color: #000000;font-weight: bold;}
+.middle .navbar button #home{border-bottom: 2px solid #575454;}
+.middle .navbar button:hover{border: 100px;background-color: #e89ea2;border-radius: 50px; color:papayawhip;}
+.middle .navbar .onlyl .logo{background-image: url("images/smalllogo.png");height: 129px;width: 250px;display: flex;justify-content: flex-end;}
+/*.bar{height: 250px;width: 1800px;display: flex;justify-content: center;background-color: #e3e3e3;padding: 50px;margin: auto;}*/
+/*.bar .barno2{background-image: url("images/smalltaycan.jpg");height: 200px;width: 300px;display: flex;justify-content: space-between;margin: auto;}*/
+/*.bar .barno3{background-color: black;height: 200px;width: 1100px;border-radius: 5px;display: flex;justify-content: space-between;}*/
+/*.bar .barno3 p{color: #bdbdbd;font-size: 25px;width: 600px;height: 100px;text-align: center;padding: 30px;}*/
+/*.bar .barno3 #redline{background-color: red;height: 120px;width: 2px; display: block;margin-top: 35px;padding: 0;}*/
+.bar {
+    height: 250px;
+    width: 100vw; /* Use viewport width to fill the entire screen width */
+    display: flex;
+    justify-content: center;
+    background-color: #e3e3e3;
+    padding: 50px;
+    margin: auto;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.bar .barno2 {
+    background-image: url("images/smalltaycan.jpg");
+    height: 160px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.bar .barno3 {
+    background-color: black;
+    height: 200px;
+    width: 100%; /* Adjusted to fill the width of .bar */
+    max-width: 1100px; /* Limit maximum width */
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.bar .barno3 p {
+    color: #bdbdbd;
+    font-size: 25px;
+    width: 100%; /* Adjusted to fill the width of .barno3 */
+    max-width: 600px; /* Limit maximum width */
+    height: 100px;
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+}
+
+.bar .barno3 #redline {
+    background-color: red;
+    height: 120px;
+    width: 2px;
+    display: block;
+    margin-top: 25px;
+    padding: 0;
+}
+
+
+
+
+/*.nav{background-color:whitesmoke;display: flex;justify-content: space-evenly;}*/
+/*.nav .navbar button{border:none;cursor: pointer;background-color: transparent;font-size: 25px;color: #000000;font-weight: bold;padding: 30px;display: flex;justify-content: space-evenly;}*/
+/*.nav .navbar .onlyl .logo{background-image: url("images/smalllogo.png");height: 129px;width: 250px;display: flex;justify-content: flex-end;}*/
+/*.nav .navbar{display: flex;justify-content: space-evenly;}*/
+/*.nav .navbar button:hover{border: 10px;background-color: #575454;border-radius: 50px; color:papayawhip;}*/
+.nav {background-color: whitesmoke; padding: 10px 0;}
+.navbar {display: flex;justify-content: center;align-items: center;gap: 20px; /* Adjust spacing between buttons */position: relative;}
+.navbar div {display: flex;align-items: center;}
+.navbar button {background-color: whitesmoke; color: black;border: none;padding: 10px 20px;font-size: 25px;cursor: pointer;}
+.navbar button:hover {background-color: #e89ea2;border-radius: 50px; }
+.onlyl {display: flex;justify-content: flex-end;padding: 15px;}
+.logo {background-image: url("images/smalllogo.png"); background-size: contain;background-repeat: no-repeat;width: 100px;height: 50px;]}
+.header{background-color: #ffcbce;height: 100px;width: auto;margin: 0;}
+.header h1{display: flex;justify-content: center;font-size: 35px;font-weight: bold;margin: 0;padding: 25px;}
+.shop {background-image: url("images/911.jpg");height: 680px;width: 100%;background-size: cover;background-position: center;background-repeat: no-repeat;}
+.text p{margin: 0;font-size: 38px;font-weight: bold;padding-top:530px;color: #ffcbce;padding-left: 60px; }
+.models{background-color: whitesmoke;height: 100px;width: auto;font-size: 25px;font-weight: bold;}
+.models h1{display:flex;justify-content: center;padding: 20px;}
+.image-grid {display: grid;grid-template-columns: repeat(3, 1fr);gap: 0;font-size: 20px;background-color: whitesmoke;}
+.image {position: relative;}
+.image img {width: 100%;height: auto;display: block;}
+.overlay {position: absolute;bottom: 0;left: 0;right: 0;background-color: rgba(0, 0, 0, 0.5);padding: 10px;display: flex;justify-content: space-between;align-items: center;}
+.overlay button {padding: 8px 16px;font-size: 14px;color: white;background-color: darkred; border: none;cursor: pointer;}
+.overlay button:hover {background-color: #e89ea2; }
+a{text-decoration: none;}
+a:visited{color: black;}
+a:link {text-decoration: none;}
+/*#plive{font-size: 50px;font-weight: bold;display: flex;justify-content: center;}*/
+/*.live {background-image: url("images/interior.jpg");background-size: cover;height: 300px;width: 1920px;padding: 50px;display: flex;flex-direction: column;justify-content: center;align-items: flex-start;margin: auto;margin-top: 50px;color: white;}*/
+/*.live h2, .live h5, .live .btnbtn {margin: 10px 0; background:transparent;border: none;}*/
+/*.live h2{font-size: 45px;font-weight: bold;}*/
+/*.live h5{font-size: 20px;}*/
+/*.live a{display: flex;justify-content: left;color:white;cursor: pointer;font-size: 25px;}*/
+/*.live a:hover{color:darkgray;}*/
+/*.live .btnbtn:hover{background-color: #5e5959;border-radius: 30%}*/
+
+#plive {
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; /* Add some margin for better spacing */
+}
+
+.live {
+    background-image: url("images/interior.jpg");
+    background-size: cover;
+    background-position: center;
+    height: auto; /* Let the height adjust based on content */
+    min-height: 300px; /* Ensure a minimum height */
+    width: 100%; /* Fill the width of the site */
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+    color: white;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.live h2, .live h5, .live .btnbtn {
+    margin: 10px 0;
+    background: transparent;
+    border: none;
+}
+
+.live h2 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.live h5 {
+    font-size: 20px;
+}
+
+.live a {
+    display: flex;
+    justify-content: left;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.live a:hover {
+    color: whitesmoke;
+}
+
+.live .btnbtn:hover {
+    background-color: #e89ea2;
+    border-radius: 1%;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    #plive {
+        font-size: 40px;
+    }
+    .live {
+        padding: 20px;
+        margin-top: 30px;
+    }
+    .live h2 {
+        font-size: 35px;
+    }
+    .live h5 {
+        font-size: 18px;
+    }
+    .live a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #plive {
+        font-size: 30px;
+    }
+    .live {
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .live h2 {
+        font-size: 28px;
+    }
+    .live h5 {
+        font-size: 16px;
+    }
+    .live a {
+        font-size: 18px;
+    }
+}
+
+.nav a{text-decoration: none;}
+/*.myPorsche{background-image: url("images/carbon.jpg");height: 900px;width: 1903px;margin: auto;}*/
+/*.myPorsche h1{display: flex;justify-content: center;margin: 0;color:whitesmoke;font-size: 40px;padding-top: 35px;}*/
+/*.myPorsche .left h2{color:whitesmoke;display: flex;justify-content: flex-start;text-indent: 100px;font-size: 50px;}*/
+/*.myPorsche .left h3{color:whitesmoke;display: flex;justify-content: flex-start;text-indent: 120px;font-size: 20px;}*/
+/*.myPorsche .right h1{display: flex;justify-content: flex-end;text-indent: -300px;}*/
+/*.myPorsche .right h3{display: flex;justify-content: flex-end;text-indent: -300px;color:whitesmoke;padding: 5px;}*/
+
+
+
+.myPorsche {
+    background-image: url("images/carbon.jpg");
+    background-size: 100% auto; /* Ensure the background image width covers the entire section */
+    background-repeat: no-repeat;
+    height: auto; /* Adjust height as needed */
+    min-height: 500px; /* Ensure a minimum height */
+    width: 100%; /* Fill the width of the window */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 50px; /* Adjust padding top for spacing */
+    padding-bottom: 50px; /* Add padding to bottom for spacing */
+}
+
+.myPorsche h1 {
+    color: whitesmoke;
+    font-size: 2rem; /* Adjust font size for responsiveness */
+    margin: 0; /* Remove default margins */
+}
+
+.myPorsche .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-left: -950px; /* Adjust left margin for spacing */
+    padding: 20px;
+    width: 40%; /* Adjust width for responsiveness */
+}
+
+.myPorsche .left h2 {
+    color: whitesmoke;
+    font-size: 2.5rem; /* Adjust font size for responsiveness */
+    text-align: left;
+    margin: 0; /* Remove default margins */
+}
+
+.myPorsche .left h3 {
+    color: whitesmoke;
+    font-size: 1rem; /* Adjust font size for responsiveness */
+    text-align: left;
+    margin: 0; /* Remove default margins */
+}
+
+.myPorsche .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 350px; /* Adjust top margin for spacing */
+    margin-right: -950px; /* Adjust right margin for spacing */
+    padding: 30px; /* Add padding for spacing */
+    width: 40%; /* Adjust width for responsiveness */
+}
+
+.myPorsche .right h1,
+.myPorsche .right h3 {
+    color: whitesmoke;
+    font-size: 1rem; /* Adjust font size for responsiveness */
+    margin: 0; /* Remove default margins */
+    padding: 5px;
+}
+
+
+
+
+
+/* Ensure the body has no default margins */
+body {
+    margin: 0;
+}
+
+/* Style for the registration section */
+.registration {
+    background-image: url("images/login.jpg");
+    background-size: cover; /* Ensure the background image covers the entire element */
+    background-position: center;
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center;
+    height: 900px; /* Adjust height as needed */
+    padding-right: 50px;
+    color: white;
+    background-repeat: no-repeat;
+}
+
+/* Style for the registration form */
+.register {
+    background-color: #2d2d2d;
+    height: auto; /* Adjust height as needed */
+    max-width: 650px; /* Limit maximum width */
+    width: 80%; /* Responsive width */
+    border-radius: 50px;
+    margin-right: 5%; /* Adjust margin to push to the right */
+    padding: 30px; /* Adjust padding for spacing */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Center align headings inside the registration form */
+.register h1,
+.register h3 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: whitesmoke;
+}
+
+.register h1 {
+    font-size: 40px;
+    margin-bottom: 10px; /* Add spacing below h1 */
+}
+
+.register h3 {
+    font-size: 20px;
+    margin-bottom: 20px; /* Add spacing below h3 */
+}
+
+/* Adjust styling for the subtitle */
+.register h2 {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    text-indent: 50px;
+    color: whitesmoke;
+}
+
+/* Style for input fields */
+.register input {
+    width: 100%; /* Full width input */
+    max-width: 450px; /* Limit maximum width */
+    background-color: #575454;
+    margin: 10px 0; /* Adjust vertical margin */
+    margin-left: 50px;
+    height: 25px;
+    padding: 10px; /* Adjust padding for input */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    color: whitesmoke;
+}
+
+/* Style for sign-in links */
+.sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0; /* Adjust vertical padding */
+}
+
+/* Style for anchor links within the registration form */
+.register a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/* Style for buttons */
+.buttonn {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #8cacff;
+    border: none;
+    border-radius: 10px;
+    color: black; /* Adjust text color */
+}
+
+.buttonn:hover {
+    background-color: #e89ea2;
+    color: whitesmoke; /* Adjust text color on hover */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .register {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-right: 0; /* Remove right margin on smaller screens */
+    }
+
+    .register h1 {
+        font-size: 30px; /* Adjust font size for h1 on smaller screens */
+    }
+
+    .register h2 {
+        font-size: 25px; /* Adjust font size for h2 on smaller screens */
+        text-indent: 0; /* Remove text indent on smaller screens */
+
+    }
+
+    .sign {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        text-align: center; /* Center align text */
+    }
+}
+
+@media (max-width: 480px) {
+    .register {
+        width: 100%; /* Full width on very small screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .register h1 {
+        font-size: 25px; /* Further adjust font size for h1 on very small screens */
+    }
+
+    .register h2 {
+        font-size: 20px; /* Further adjust font size for h2 on very small screens */
+        text-indent: 0; /* Remove text indent on very small screens */
+    }
+}
+
+
+
+/*.register {background-color: #2d2d2d;height: 500px;width: 650px;border-radius: 50px;}*/
+/*.register h1, h3{display: flex;justify-content: center;}*/
+/*.register h1{font-size: 40px;font-family: Arial,sans-serif,sans-serif}*/
+/*.register h3{font-size: 20px;font-family: Arial,sans-serif,sans-serif}*/
+/*.register h2{font-family: Arial,sans-serif,sans-serif;font-size: 30px;text-indent: 50px;}*/
+/*.register input{width: 450px;background-color: #575454;margin-left: 50px;height: 25px;}*/
+/*.sign {display: flex;justify-content: center;align-items: center;gap: 20px; padding: 60px;}*/
+/*.register a{color:whitesmoke;}*/
+/*.buttonn {padding: 10px 20px; cursor: pointer;background-color: #8cacff; border: none;border-radius: 10px;}*/
+/*.buttonn:hover {background-color: #5e5959;}*/
+
+
+
+
+
+
